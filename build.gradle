@@ -1,0 +1,36 @@
+import org.jetbrains.intellij.tasks.RunPluginVerifierTask
+
+plugins {
+    id 'org.jetbrains.intellij' version '1.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+}
+
+group 'com.boppy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2021.1.2'
+}
+/*
+patchPluginXml {
+    changeNotes """
+      V1 Unstable"""
+}*/
+
+runPluginVerifier {
+    ideVersions = ["201.8743.12", "202.8194.7", "203.7148.57", "211.6693.111"]
+    failureLevel = EnumSet.of(RunPluginVerifierTask.FailureLevel.COMPATIBILITY_PROBLEMS, RunPluginVerifierTask.FailureLevel.INVALID_PLUGIN)
+}
+
+publishPlugin {
+    token System.getProperty("jetbrains.token")
+}

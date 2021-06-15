@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.boppy.jellybeans</id>
+    <name>Jellybeans Theme</name>
+    <vendor email="zack-nx@protonmail.ch" url="https://github.com/aurdevv/nano-jellybeans">boppy</vendor>
+
+    <description><![CDATA[
+    Any color corrections are welcomed! check out the repository: github.com/aurdevv/nano-jellybeans.<br>
+    This is a IntelliJ Theme based on nanotech/jellybeans.vim.
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <themeProvider id="07e467d8-25ce-4318-ade2-586bd266d1d6" path="/themes/jellybeans.theme.json"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
