@@ -1,10 +1,10 @@
 <idea-plugin>
     <id>com.boppy.jellybeans</id>
     <name>Jellybeans Theme</name>
-    <vendor email="zack-nx@protonmail.ch" url="https://github.com/aurdevv/nano-jellybeans">boppy</vendor>
+    <vendor email="zack-nx@protonmail.ch" url="https://github.com/aurdevv/jellybeans-intellij">boppy</vendor>
 
     <description><![CDATA[
-    Any color corrections are welcomed! check out the repository: github.com/aurdevv/nano-jellybeans.<br>
+    Any color corrections are welcomed! check out the repository: github.com/aurdevv/jellybeans-intellij.<br>
     This is a IntelliJ Theme based on nanotech/jellybeans.vim.
     ]]></description>
 
